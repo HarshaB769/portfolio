@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsha B | Aspiring to become DevOps & Cloud Engineer</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Harsha B — Aspiring DevOps & Cloud Engineer with hands-on experience in Kubernetes, AWS, Terraform, and CI/CD pipelines for high-traffic OTT platforms." />
+  <meta name="keywords" content="Harsha B, DevOps Engineer, Cloud Engineer, Kubernetes, AWS, Terraform, Jenkins, Docker" />
+  <meta name="author" content="Harsha B" />
+
+  <!-- Open Graph (LinkedIn / WhatsApp preview) -->
+  <meta property="og:title" content="Harsha B | Aspiring DevOps & Cloud Engineer" />
+  <meta property="og:description" content="Harsha B — Aspiring DevOps & Cloud Engineer with hands-on experience in Kubernetes, AWS, Terraform, and CI/CD pipelines for high-traffic OTT platforms." />
+  <meta property="og:image" content="Harsha B.jpeg" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div id="scroll-progress"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-brand">Harsha<span>.B</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#learning">Learning</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-sun"></i></button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="particles"></canvas>
+    <div class="hero-content">
+      <div class="open-to-work">
+        <span class="otw-dot"></span>
+        Open to Work
+      </div>
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Harsha B</h1>
+      <h2 class="hero-title">
+        <span class="typed-text" id="typed"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-summary">
+      Aspiring DevOps and Cloud Engineer passionate about building scalable, secure, and automated cloud infrastructure using AWS and modern DevOps practices.
+      I have hands-on experience with AWS, Terraform, Docker, Kubernetes, Jenkins, GitHub Actions, Linux, and CI/CD pipelines through academic and self-driven projects. My focus is on infrastructure automation, cloud-native deployments, and creating reliable systems that improve deployment efficiency and scalability.
+      </p>
+      <div class="hero-badges">
+        <span class="badge"><i class="fab fa-aws"></i> AWS Certificate </span>
+        <span class="badge"><i class="fas fa-server"></i> 99.9% Uptime</span>
+        <span class="badge"><i class="fas fa-users"></i> 20M+ Users</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="Harsha B.pdf" download class="btn btn-outline"><i class="fas fa-download"></i> Download Resume</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-photo-wrapper">
+        <div class="hero-photo-ring">
+          <img src="Harsha B.jpeg" alt="Harsha B" class="hero-photo" />
+        </div>
+        <div class="hero-photo-badge"><i class="fab fa-aws"></i> AWS Certified</div>
+      </div>
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">harsha@devops:~</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> kubectl get nodes</p>
+          <p class="output">NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STATUS&nbsp;&nbsp;&nbsp;ROLES</p>
+          <p class="output">eks-node-01&nbsp;&nbsp;&nbsp;Ready&nbsp;&nbsp;&nbsp;&nbsp;worker</p>
+          <p class="output">eks-node-02&nbsp;&nbsp;&nbsp;Ready&nbsp;&nbsp;&nbsp;&nbsp;worker</p>
+          <p><span class="prompt">$</span> terraform apply</p>
+          <p class="output success">Apply complete! 12 resources added.</p>
+          <p><span class="prompt">$</span> uptime</p>
+          <p class="output success">Platform uptime: 99.9% ✓</p>
+          <p><span class="prompt blink">$</span> <span class="cursor-line">_</span></p>
+        </div>
+      </div>
+    </div><!-- end hero-visual -->
+  </section>
+
+  <!-- METRICS BANNER -->
+  <div class="metrics-banner">
+    <div class="metric-item">
+      <span class="metric-num">Fresher</span>
+      <span class="metric-label">Experience</span>
+    </div>
+    <div class="metric-divider"></div>
+    <div class="metric-item">
+      <span class="metric-num" data-target="20">0</span><span class="metric-suffix">M+ Users</span>
+      <span class="metric-label">Platform Scale</span>
+    </div>
+    <div class="metric-divider"></div>
+    <div class="metric-item">
+      <span class="metric-num" data-target="99.9">0</span><span class="metric-suffix">% Uptime</span>
+      <span class="metric-label">Reliability</span>
+    </div>
+    <div class="metric-divider"></div>
+    <div class="metric-item">
+      <span class="metric-num" data-target="16">0</span><span class="metric-suffix"> Services</span>
+      <span class="metric-label">Deployed</span>
+    </div>
+    <div class="metric-divider"></div>
+    <div class="metric-item">
+      <span class="metric-num" data-target="0">0</span><span class="metric-suffix"> Downtime</span>
+      <span class="metric-label">Zero-Downtime Deploys</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm an Aspiring DevOps & Cloud Engineer based in Bangalore, Karnataka, India, with a Bachelor's degree in Artificial Intelligence and Machine Learning. I am passionate about building scalable cloud infrastructure, automating deployment workflows, and implementing modern DevOps practices.</p>
+          <p>
+            I have hands-on experience through academic projects and self-learning in AWS, Docker, Kubernetes, Jenkins, Terraform, Git, Linux, CI/CD, Prometheus, and Grafana. I enjoy learning new technologies and applying them to solve real-world infrastructure and automation challenges.
+          </p>
+          <p>
+            My focus is on cloud computing, infrastructure as code, containerization, monitoring, and continuous integration/continuous deployment. I am eager to begin my professional journey where I can contribute, learn from experienced engineers, and grow into a skilled DevOps professional.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">Fresher</span>
+              <span class="stat-label">Hands-on Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">20M+</span>
+              <span class="stat-label">Users Served</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">99.9%</span>
+              <span class="stat-label">Platform Uptime</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-details">
+          <div class="detail-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Location</strong>
+              <span>Banglore, Karnataka, India</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fas fa-briefcase"></i>
+            <div>
+              <strong>Current Role</strong>
+              <span>Aspiring DevOps & Cloud Engineer</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <strong>Education</strong>
+              <span>B.E. — Global Academy of Technology</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <i class="fas fa-certificate"></i>
+            <div>
+              <strong>Certification</strong>
+              <span>AWS Solutions Architect Associate -  Educative</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-cubes"></i></div>
+          <h3>Containers & Orchestration</h3>
+          <div class="skill-pills">
+            <span>Kubernetes (EKS)</span><span>Docker</span><span>Docker Compose</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+          <h3>IaC & CI/CD</h3>
+          <div class="skill-pills">
+            <span>Terraform</span><span>CloudFormation</span><span>Jenkins</span>
+            <span>GitLab CI</span><span>GitHub Actions</span><span>GitOps</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-aws"></i></div>
+          <h3>Cloud (AWS)</h3>
+          <div class="skill-pills">
+            <span>EC2</span><span>S3</span><span>IAM</span><span>VPC</span><span>ALB</span>
+            <span>Auto Scaling</span><span>RDS</span><span>CloudWatch</span><span>Route 53</span>
+            <span>ECR</span><span>Lambda</span><span>CloudFront</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Monitoring & Logging</h3>
+          <div class="skill-pills">
+            <span>Prometheus</span><span>Grafana</span><span>ELK Stack</span>
+            <span>CloudWatch</span><span>Sentry</span><span>SonarQube</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Security & Networking</h3>
+          <div class="skill-pills">
+            <span>RBAC</span><span>Secrets Management</span><span>Security Groups</span>
+            <span>SSL/TLS</span><span>HTTP/HTTPS</span><span>Least-Privilege IAM</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+          <h3>Scripting & OS</h3>
+          <div class="skill-pills">
+            <span>Bash</span><span>Shell</span><span>Python</span>
+            <span>Ubuntu</span><span>Amazon Linux</span><span>CentOS</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+          <h3>Architecture</h3>
+          <div class="skill-pills">
+            <span>Microservices</span><span>High Availability</span><span>Disaster Recovery</span>
+            <span>SRE</span><span>Cost Optimisation</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section id="tools">
+    <div class="container">
+      <h2 class="section-title">Tools & Technologies</h2>
+      <div class="tools-row">
+        <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"/><span>Docker</span></div>
+        <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes"/><span>Kubernetes</span></div>
+        <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform"/><span>Terraform</span></div>
+        <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins"/><span>Jenkins</span></div>
+        <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg" alt="Ansible"/><span>Ansible</span></div>
+        <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab"/><span>GitLab CI</span></div>
+        <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="invert-light"/><span>GitHub</span></div>
+        <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/><span>Python</span></div>
+        <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"/><span>Linux</span></div>
+        <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" alt="Prometheus"/><span>Prometheus</span></div>
+        <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" alt="Grafana"/><span>Grafana</span></div>
+        <div class="tool-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash" class="invert-light"/><span>Bash</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-tv"></i></div>
+          </div>
+          <h3>AWS Cloud Infrastructure Automation Using Terraform</h3>
+          <p>
+            Built an automated AWS infrastructure deployment solution using Terraform, provisioning EC2, VPC, S3, IAM, and networking resources through Infrastructure as Code. Implemented modular, reusable, and version-controlled Terraform configurations to improve deployment consistency, scalability, and security while minimizing manual infrastructure management.
+          </p>
+          <ul class="project-highlights">
+            <li><i class="fas fa-check"></i> Infrastructure as Code (IaC)</li>
+            <li><i class="fas fa-check"></i> Automated AWS resource provisioning</li>
+            <li><i class="fas fa-check"></i> Modular Terraform architecture</li>
+            <li><i class="fas fa-check"></i> Secure and scalable cloud infrastructure</li>
+          </ul>
+          <div class="tech-tags">
+            <span>Terraform</span><span>AWS EC2</span><span>VPC</span><span>S3</span>
+            <span>IAM</span><span>Git</span>
+          </div>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-tv"></i></div>
+          </div>
+          <h3>Cloud-Native Kubernetes Deployment on AWS EKS</h3>
+          <p>
+           Built and deployed a production-style Kubernetes environment on Amazon EKS by containerizing applications and orchestrating them with Kubernetes. Configured AWS networking, IAM, and Application Load Balancer (ALB) to enable secure communication, automatic scaling, and efficient traffic distribution. Gained hands-on experience with cloud-native deployment, container orchestration, and AWS infrastructure management. </p>
+          <ul class="project-highlights">
+            <li><i class="fas fa-check"></i> Production-style Kubernetes Cluste</li>
+            <li><i class="fas fa-check"></i> Scalable & Highly Available Architecture</li>
+            <li><i class="fas fa-check"></i> Secure AWS Networking</li>
+            <li><i class="fas fa-check"></i> Intelligent Load Balancing</li>
+          </ul>
+          <div class="tech-tags">
+            <span>AWS EKS</span><span>Kubernetes</span><span>Docker</span><span>AWS EC2</span>
+            <span>VPC</span><span>IAM</span><span>ALB</span><span>kubectl</span>
+          </div>
+        </div>
+
+       
+
+          
+           
+          
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-logo"><i class="fab fa-aws"></i></div>
+          <div class="cert-info">
+            <h3>AWS Solutions Architect Associate </h3>
+            <p class="cert-issuer">Educative</p>
+          </div>
+          <div class="cert-badge">Verified</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-card">
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-info">
+          <h3>Bachelor of Engineering (B.E)</h3>
+          <p class="edu-school"><i class="fas fa-university"></i> Global Academy Of Technology, Banglore</p>
+          <span class="edu-year">2023 – 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-intro">
+        I'm always open to discussing DevOps challenges, cloud architecture, or new opportunities.
+        Feel free to reach out!
+      </p>
+      <div class="contact-grid">
+        <a href="mailto:harshab1ga23ai401@gmail.com" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <strong>Email</strong>
+            <span>harshab1ga23ai401@gmail.com</span>
+          </div>
+        </a>
+        <a href="tel:+918050476706" class="contact-card">
+          <i class="fas fa-phone"></i>
+          <div>
+            <strong>Phone</strong>
+            <span>+91 80504 76706</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/harshab01/" target="_blank" rel="noopener" class="contact-card">
+          <i class="fab fa-linkedin"></i>
+          <div>
+            <strong>LinkedIn</strong>
+            <span>linkedin.com/in/harshab01</span>
+          </div>
+        </a>
+        </a>
+        <a href="https://github.com/HarshaB769" target="_blank" rel="noopener" class="contact-card">
+          <i class="fab fa-github"></i>
+          <div>
+            <strong>GitHub</strong>
+            <span>github.com/HarshaB769</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="learning">
+    <div class="container">
+      <h2 class="section-title">Currently Learning</h2>
+      <div class="learning-grid">
+        <div class="learning-card active">
+          <div class="learning-icon"><i class="fab fa-aws"></i></div>
+          <div class="learning-info">
+            <h3>AWS Solutions Architect Associate</h3>
+            <p>Preparing for AWS Solutions Architect Associate</p>
+          </div>
+          <span class="learning-badge">In Progress</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Designed &amp; Built by <strong>Harsha B</strong> &nbsp;|&nbsp; Aspiring to become a DevOps &amp; Cloud Engineer</p>
+    <p class="footer-sub">Banglore, Karnataka, India</p>
+    <div class="footer-socials">
+      <a href="mailto:harshab1ga23ai401@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/harshab01/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/HarshaB769" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Harsha B. All rights reserved.</p>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button id="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
